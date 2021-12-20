@@ -37,7 +37,24 @@
 </head>
 
 
-<body onload="loadImage('preview');">
+<body onload="loadImage('preview');
+
+loadImage('preview')
+    var canvas = document.getElementById('preview');
+    var img = canvas.getContext('2d');   //文字のスタイルを指定
+    img.font = '22px fonts';
+    img.fillStyle = '#f5f5f5';
+    //文字の配置を指定（左上基準にしたければtop/leftだが、文字の中心座標を指定するのでcenter
+    img.textBaseline = 'center';
+    img.textAlign = 'center';
+    tategaki(img,'ホゲホゲ', 420, 320)
+    let link = document.getElementById('hiddenLink')
+    link.href = canvas.toDataURL()
+
+    document.getElementById('canvasImage').src = canvas.toDataURL()
+
+    link.click()
+">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
