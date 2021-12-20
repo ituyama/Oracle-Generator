@@ -46,7 +46,7 @@ function drawText(canvas_id, kami, naka, name) {
 
 
     //文字のスタイルを指定
-    img.font = '190px fonts';
+    img.font = '150px fonts';
     img.fillStyle = '#f0f8ff';
     //文字の配置を指定（左上基準にしたければtop/leftだが、文字の中心座標を指定するのでcenter
     img.textBaseline = 'center';
