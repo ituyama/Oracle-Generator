@@ -30,7 +30,7 @@ function drawText(canvas_id, kami, naka, name) {
     
     img.clearRect(0, 0, 600, 900);
     Name.clearRect(0, 0, 600, 900);
-    Name.drawImage(image, 0, 0);
+    
     img.drawImage(image, 0, 0);
 
 
