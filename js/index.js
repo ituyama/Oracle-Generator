@@ -25,7 +25,13 @@ function drawText(canvas_id, kami, naka, name) {
     var img = canvas.getContext('2d');
     var Name= canvas.getContext('2d');
 
-
+    var image = new Image();
+    image.src = './img/backs.png';
+    
+    img.clearRect(0, 0, 600, 900);
+    Name.clearRect(0, 0, 600, 900);
+    Name.drawImage(image, 0, 0);
+    img.drawImage(image, 0, 0);
 
 
 
