@@ -70,7 +70,7 @@ loadImage('preview')
                 <div class="card">
                     <canvas id="preview"></canvas>
                     
-                    <button onclick="saveCanvas('png');">pngで保存</button>
+                    <button class="btn buttons" onclick="saveCanvas('png');">保存する</button>
                     
 
 
@@ -102,9 +102,9 @@ loadImage('preview')
 
                         <input type="text" class="form-control-lg" id="name" placeholder="名前">
                         <br>
-                        <button class="btn btn-info"
+                        <button class="btn"
                             onclick="drawText('preview', 'kami','naka','name');">神託を生成する</button>
-                        <button class="btn btn-info" onclick="location.reload();">消す</button>
+                        <button class="btn" onclick="location.reload();">消す</button>
 
 
 
